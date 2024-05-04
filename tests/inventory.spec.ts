@@ -11,7 +11,7 @@ test.describe('Inventory Test Suite', async () => {
         'Should display all currently available products',
         { tag: '@smoke' },
         async ({ inventoryPage }) => {
-            const productNames = await inventoryPage
+            const productNames: string[] = await inventoryPage
                 .allProductNames()
                 .allInnerTexts();
 
@@ -30,7 +30,7 @@ test.describe('Inventory Test Suite', async () => {
     test('Should sort items by name from A to Z by default', async ({
         inventoryPage,
     }) => {
-        const productNames = await inventoryPage
+        const productNames: string[] = await inventoryPage
             .allProductNames()
             .allInnerTexts();
 
