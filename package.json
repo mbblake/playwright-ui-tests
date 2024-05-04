@@ -1,25 +1,28 @@
 {
-  "name": "playwright-ui-tests",
-  "version": "1.0.0",
-  "description": "Basic demonstration of using Playwright to automate UI tests on a public test web app",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mbblake/playwright-ui-tests.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mbblake/playwright-ui-tests/issues"
-  },
-  "homepage": "https://github.com/mbblake/playwright-ui-tests#readme",
-  "devDependencies": {
-    "@playwright/test": "^1.43.1",
-    "@types/node": "^20.12.8"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5"
-  }
+    "name": "playwright-ui-tests",
+    "version": "1.0.0",
+    "description": "Basic demonstration of using Playwright to automate UI tests on a public test web app",
+    "main": "index.js",
+    "scripts": {
+        "all-tests": "npx playwright test",
+        "smoke-tests": "npx playwright test --grep @smoke"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbblake/playwright-ui-tests.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mbblake/playwright-ui-tests/issues"
+    },
+    "homepage": "https://github.com/mbblake/playwright-ui-tests#readme",
+    "devDependencies": {
+        "@playwright/test": "^1.43.1",
+        "@types/node": "^20.12.8"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5"
+    }
 }
